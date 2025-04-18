@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Progetto M2S2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/dist/css/style.min.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <!-- ELEMENTI DA SISTEMARE
+     1. COLORE E TEMA CUSTOM -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <img src="/assets/media/png/netflix_logo.png" alt="netflix_logo" width="100" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tv Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true" href="#">My List</a>
+            </li>
+          </ul>
+          <div class="d-flex align-center">
+            <i class="bi bi-search p-3"></i>
+            <button class="btn btn-dark p-3">KIDS</button>
+            <i class="bi bi-bell-fill p-3"></i>
+            <li class="nav-item dropdown">
+              <!-- 2. LEVARE ::marker -->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/media/png/avatar.png" width="30" alt="account_img"
+              /></a>
+              <ul class="dropdown-menu">
+                <!-- 3. COLLEGARE PAGINE -->
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Users</a></li>
+                <li><a class="dropdown-item" href="#">Preferences</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                <!-- COLLEGARE PAGINE -->
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
