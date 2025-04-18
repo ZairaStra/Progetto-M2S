@@ -46,11 +46,11 @@
             <i class="bi bi-search p-3"></i>
             <button class="btn btn-dark p-3">KIDS</button>
             <i class="bi bi-bell-fill p-3"></i>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" ::marker>
               <!-- 2. LEVARE ::marker -->
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/media/png/avatar.png" width="30" alt="account_img"
-              /></a>
+              <button class="btn btn-dark dropdown-toggle p-3" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/media/png/avatar.png" width="30" alt="account_img" />
+              </button>
               <ul class="dropdown-menu">
                 <!-- 3. COLLEGARE PAGINE -->
                 <li><a class="dropdown-item" href="#">Account</a></li>
@@ -68,6 +68,35 @@
         </div>
       </div>
     </nav>
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex align-items-center">
+              <h1>TV Shows</h1>
+              <div class="dropdown mx-5">
+                <button class="btn btn-dark btn-outline-light rounded-0 p-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genres
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="#">Romantic</a></li>
+                  <li><a class="dropdown-item" href="#">Thriller</a></li>
+                  <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                  <li><a class="dropdown-item" href="#">Adventure</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-dark btn-outline-light rounded-0 px-2 py-1"><i class="bi bi-justify-left p-0"></i></button>
+              <button class="btn btn-dark btn-outline-light rounded-0 px-2 py-1"><i class="bi bi-grid p-0"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section></section>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
