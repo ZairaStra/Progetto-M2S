@@ -10,11 +10,11 @@
   <body class="bg-dark text-white">
     <!-- ELEMENTI DA SISTEMARE
      1. COLORE E TEMA CUSTOM -->
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <div class="container">
-        <a class="navbar-brand" href="#"> <img src="/assets/media/png/netflix_logo.png" alt="netflix_logo" width="100" /></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container ps-0">
+        <a class="navbar-brand" href="#"> <img src="/assets/media/png/netflix_logo.png" alt="netflix_logo" width="110"/></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler btn btn-dark"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -22,7 +22,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <img src="assets/media/png/avatar.png" width="30" alt="account_img" class="navbar-toggler-icon"></img>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -43,23 +43,24 @@
             </li>
           </ul>
           <div class="d-flex align-center">
-            <i class="bi bi-search p-3"></i>
-            <button class="btn btn-dark p-3">KIDS</button>
-            <i class="bi bi-bell-fill p-3"></i>
-            <li class="nav-item dropdown" ::marker>
-              <!-- 2. LEVARE ::marker -->
-              <button class="btn btn-dark dropdown-toggle p-3" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/media/png/avatar.png" width="30" alt="account_img" />
-              </button>
-              <ul class="dropdown-menu">
-                <!-- 3. COLLEGARE PAGINE -->
+            <!-- 2. GESTIRE PADDING ELEMNTI DIV-->
+            <i class="bi bi-search"></i>
+            <button class="btn btn-dark">KIDS</button>
+            <i class="bi bi-bell-fill"></i>
+            <li class="nav-item dropdown">
+              <!-- 3. LEVARE ::marker -->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/media/png/avatar.png" width="30" alt="account_img"
+              /></a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <!-- 4. COLLEGARE PAGINE -->
                 <li><a class="dropdown-item" href="#">Account</a></li>
                 <li><a class="dropdown-item" href="#">Users</a></li>
                 <li><a class="dropdown-item" href="#">Preferences</a></li>
                 <li><a class="dropdown-item" href="#">Contact Us</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                <!-- COLLEGARE PAGINE -->
+                <!-- 4. COLLEGARE PAGINE -->
                 <li><a class="dropdown-item" href="#">Settings</a></li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
@@ -78,7 +79,7 @@
             <div class="d-flex align-items-center">
               <h1>TV Shows</h1>
               <div class="dropdown mx-5">
-                <button class="btn btn-dark btn-outline-light rounded-0 p-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn bg-black btn-outline-light rounded-0 px-4 py-1 dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Genres
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -203,6 +204,49 @@
           </div>
         </div>
       </section>
+ <!-- ELEMENTI DA SISTEMARE
+     mt footer da aumentare
+     -->
+      <footer class="mt-5" id="footer">
+        
+        <div class="row g-2 g-md-2 g-xl-3">
+         <div class="col-0 col-sm-1 col-md-2"> </div>
+         <div class="col-12 col-sm-10 col-md-8">
+          <div class="mb-3">
+           <i class="bi bi-facebook p-1" width="30"></i>
+           <i class="bi bi-instagram p-1" width="30"></i>
+           <i class="bi bi-twitter p-1" width="30"></i>
+           <i class="bi bi-youtube p-" width="30"></i>
+          </div>
+          <div class="row g-2 g-md-2 g-xl-3">
+           <div class="col-sm-6 col-lg-3" >
+            <h5>Audio and Subtitles</h5>
+            <h5>Media Center</h5>
+            <h5>Privacy</h5>
+            <h5>Contact Us</h5>
+           </div>
+           <div class="col-sm-6 col-lg-3" >
+            <h5>Audio Description</h5>
+            <h5>Investor relations</h5>
+            <h5>Legal Notices</h5>
+           </div>
+           <div class="col-sm-6 col-lg-3" >
+            <h5>Help Center</h5>
+            <h5>Jobs</h5>
+            <h5>Cookie Preferences</h5>
+           </div>
+           <div class="col-sm-6 col-lg-3" >
+            <h5>Gift Cards</h5>
+            <h5>Terms Of Use</h5>
+            <h5>Corporate Information</h5>
+           </div>
+          </div>
+          <button class="btn btn-dark btn-outline-light rounded-0 px-2 py-1 mt-4 mb-3">Service Code</button>
+          <h6>&copy; 1997-2019 Netflix, inc. {i-0d00fcda2fdf9c0de}</h6>
+         </div>
+         <div class="col-0 col-sm-1 col-md-2"></div>
+        </div>
+      </footer>
     </div>
 
     <script
